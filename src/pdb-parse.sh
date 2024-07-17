@@ -4,4 +4,4 @@ echo Enter Protein Identification Number:
 read PIN
 
 
-curl -O "https://files.rcsb.org/download/$PIN"
+curl -O "https://files.rcsb.org/download/$PIN.pdb"
