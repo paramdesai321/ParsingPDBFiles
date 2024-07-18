@@ -2,15 +2,15 @@ import sys
 
 
 if len(sys.argv) < 2:
-    print("Usage: python filename.py <variable>")
+    print("Usage: python filename.py <PIN(Protein Index Number)>")
     sys.exit(1)
 
 
-variable = sys.argv[1]
+PIN = sys.argv[1]
 
 
-with open(f'{variable}.pdb', 'r') as rf:
-    with open(f'ATOMlines{variable}.txt', 'w') as wf:
+with open(f'{PIN}.pdb', 'r') as rf:
+    with open(f'ATOMlines{PIN}.txt', 'w') as wf:
 
      for line in rf:
         if line.startswith('ATOM'):
