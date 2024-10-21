@@ -2,7 +2,7 @@ import sys
 
 
 if len(sys.argv) < 2:
-    print("Usage: python filename.py <PIN(Protein Index Number)>")
+    print("Please Enter a Protien Identification Number to get the ATOM Lines")
     sys.exit(1)
 
 
@@ -14,5 +14,5 @@ with open(f'{PIN}.pdb', 'r') as rf:
 
      for line in rf:
         if line.startswith('ATOM'):
-            print(line)
+            #print(line)
             wf.write(line)
